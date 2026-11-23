@@ -1,0 +1,21 @@
+*{box-sizing:border-box}
+:root{--gold:#d6b15b;--gold2:#f0d58e;--bg:#090909;--panel:#151515;--muted:#aaa}
+body{margin:0;min-height:100vh;background:radial-gradient(ellipse at top,#242018 0,#0b0b0b 48%,#050505 100%);color:#f7f4ed;font-family:Arial,"Noto Sans Arabic",sans-serif;display:grid;place-items:center;padding:24px}
+.page{width:min(100%,440px)}
+.card{background:linear-gradient(155deg,#1d1b17,#101010 45%,#17130b);border:1px solid rgba(214,177,91,.55);border-radius:26px;padding:32px 24px 25px;text-align:center;box-shadow:0 24px 80px #000a, inset 0 0 28px #d6b15b0a}
+.monogram{width:78px;height:78px;border-radius:50%;margin:0 auto 17px;display:grid;place-items:center;border:1px solid var(--gold);color:var(--gold2);font-family:Georgia,serif;font-size:27px;letter-spacing:2px;background:linear-gradient(145deg,#292319,#090909);box-shadow:0 0 28px #d6b15b18}
+.eyebrow{font-size:10px;letter-spacing:3px;color:var(--gold);margin:0 0 10px;direction:ltr}
+h1{font-size:29px;letter-spacing:.4px;margin:0;color:var(--gold2);direction:ltr}
+.subtitle{font-size:14px;color:#c8c1b3;margin:12px 0 20px}
+.gold-line{height:1px;width:78px;margin:0 auto 23px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+.section-label{font-size:13px;color:#e8d6a8;margin:0 0 14px}
+.actions{display:grid;gap:10px}
+.action{min-height:53px;border:1px solid #4b4029;border-radius:13px;background:linear-gradient(100deg,#211d15,#171717);color:#f5f0e5;text-decoration:none;display:flex;align-items:center;gap:13px;padding:0 16px;text-align:right;transition:.18s ease}
+.action:hover{border-color:var(--gold);transform:translateY(-1px);background:#282217}
+.symbol{width:27px;height:27px;border-radius:9px;display:grid;place-items:center;color:var(--gold2);font-size:18px;font-weight:bold;background:#d6b15b18}
+.action span:nth-child(2){flex:1;font-size:14px}
+.arrow{color:var(--gold);font-size:17px}
+.footer{font-size:10px;letter-spacing:2px;color:#8e805f;margin:23px 0 0;direction:ltr}
+.note{font-size:11px;line-height:1.8;color:#8e8a80;text-align:center;margin:14px 8px 0}
+[hidden]{display:none!important}
+@media(max-width:360px){body{padding:14px}.card{padding:26px 17px}h1{font-size:25px}}
